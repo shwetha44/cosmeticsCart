@@ -1,0 +1,84 @@
+h1 {
+  margin-top: 3rem;
+}
+
+form {
+  max-width: 22.5rem;
+  width: 100%;
+  padding: 3.625rem 0.3rem;
+  /* border: 1px solid #e1e2f0; */
+  /* border-radius: 4px; */
+  /* box-shadow: 0 0 5px 0 rgba(42, 45, 48, 0.12); */
+  transition: all 0.3s ease;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.row label {
+  font-size: 13px;
+  color: #8086a9;
+}
+
+.row input {
+  flex: 1;
+  padding: 13px;
+  border: 1px solid #d6d8e6;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.2s ease-out;
+}
+
+.row input:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 5px 0 rgba(42, 45, 48, 0.12);
+}
+
+.row input::placeholder {
+  color: #c8cddf;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background: #266fa0;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 15px;
+  transition: background 0.2s ease-out;
+}
+
+button:hover {
+  background: #266fa0;
+}
+
+@media only screen and (min-width: 660px) and (max-width: 1024px) {
+  .login-form {
+    padding: 0 12rem;
+  }
+
+  form {
+    border: none;
+    box-shadow: none;
+    padding: 20px 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .login-form {
+    padding: 0 36rem;
+  }
+
+  form {
+    border: none;
+    box-shadow: none;
+    padding: 20px 0;
+  }
+}
